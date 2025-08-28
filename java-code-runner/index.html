@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java Runner via JDoodle</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Monaco Editor loader -->
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/loader.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Java Runner (JDoodle)</h1>
+      <input type="file" id="file-input" multiple>
+    </header>
+    <aside>
+      <ul id="file-list"></ul>
+    </aside>
+    <main>
+      <div id="editor-container"></div>
+      <button id="run-btn">Run</button>
+      <pre id="output"></pre>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
