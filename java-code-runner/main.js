@@ -1,7 +1,7 @@
 // JDoodle API credentials (get these from https://www.jdoodle.com/compiler-api/)
 // DO NOT commit your credentials to public repos!
-const JDoodle_ClientId = "f7c8db43537069cffbc84dec51988ef8";
-const JDoodle_ClientSecret = "c4ffb18629f18c3f2664b6db58856ffe1214370c37a7712fad944c4d27ac0395";
+const JDoodle_ClientId = "";
+const JDoodle_ClientSecret = "";
 
 let files = {};
 let selectedFile = null;
