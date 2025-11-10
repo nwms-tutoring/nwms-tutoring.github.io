@@ -6,23 +6,64 @@
   <title>Thunderstorms, Slide 1</title>
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <style>
+    /* Style for the images side by side */
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* space between images */
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Style for bigger button */
+    .next-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #007BFF;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+
+    .next-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Center the button */
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Thunderstorms</h1>
+  <h1 style="text-align: center;">Thunderstorms</h1>
   <h2 style="text-align: center;">By Miles Howard</h2>
 
-
-  <!-- Tornado image centered above the button -->
-  <div style="text-align: center;">
+  <!-- Images side by side -->
+  <div class="image-container">
     <img 
       src="https://disasterphilanthropy.org/wp-content/uploads/2022/03/greg-johnson-onCIfj_UIeQ-unsplash-scaled.jpg" 
-      alt="Tornado" 
-      style="width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" 
+      alt="Tornado 1" 
+    />
+    <img 
+      src="https://images.nationalgeographic.org/image/upload/t_RL2_search_thumb/v1652341054/EducationHub/photos/tornado.jpg" 
+      alt="Tornado 2" 
     />
   </div>
 
-  <p style="text-align: center; margin-top: 20px;">
-    <a href="/thunderstorm-slideshow/slide-2.html">Next slide →</a>
-  </p>
+  <!-- Bigger Next slide button -->
+  <div class="button-container">
+    <a href="/thunderstorm-slideshow/slide-2.html" class="next-button">Next slide →</a>
+  </div>
 </body>
 </html>
