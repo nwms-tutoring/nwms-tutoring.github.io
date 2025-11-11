@@ -3,15 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thunderstorms, Slide 1</title>
+  <title>Thunderstorms, Slide 2</title>
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="icon" type="image/svg" href="/images/favicon.svg">
-</head>
-</head>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* space between image and list */
+      margin-top: 20px;
+      align-items: center;
+    }
+    .image-container img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .list-container {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+    .next-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #007BFF;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+      margin-top: 30px;
+    }
+    .next-button:hover {
+      background-color: #0056b3;
+    }
+    .button-container {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>Thunderstorms</h1>
-  <h2>By Miles Howard</h2>
+  <h1 style="text-align: center;">Worst thunderstorms in history</h1>
+
+  <div class="image-container">
+    <div class="list-container">
+      <ul>
+        <li>India - December 2014</li>
+      </ul>
+    </div>
+    <img 
+      src="https://images.nationalgeographic.org/image/upload/t_RL2_search_thumb/v1652341054/EducationHub/photos/tornado.jpg" 
+      alt="India December 2014 thunderstorm" 
+    />
+  </div>
+
+  <div class="button-container">
+    <a href="/thunderstorm-slideshow/slide-3.html" class="next-button">Next slide →</a>
+  </div>
 </body>
 </html>
