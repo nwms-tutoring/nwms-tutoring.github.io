@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thunderstorms, Slide 2</title>
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center; /* centers headings */
+      text-align: center;
     }
 
     h1 {
@@ -19,27 +19,34 @@
       font-size: 2rem;
     }
 
-    .image-container {
+    .container {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       gap: 20px;
       margin: 30px 10px;
-      flex-wrap: wrap; /* allows stacking on small screens */
+      flex-wrap: wrap;
+      width: 100%;
     }
 
-    .image-container img {
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 250px;
+    }
+
+    .column img {
       width: 300px;
-      height: auto;
+      max-width: 100%;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
     .list-container {
-      max-width: 250px;
       font-size: 18px;
       line-height: 1.4;
-      text-align: center; /* centers the text inside the box */
+      text-align: center;
     }
 
     .button-container {
@@ -62,32 +69,51 @@
     .next-button:hover {
       background-color: #0056b3;
     }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .column img {
+        width: 80%;
+      }
+    }
   </style>
 </head>
 <body>
+
   <h1>Worst Thunderstorm in History</h1>
 
-  <div class="image-container">
-    <div class="list-container">
-      <ul>
-        <li>India – December 2014</li>
-      </ul>
+  <div class="container">
+    <!-- Left text -->
+    <div class="column">
+      <div class="list-container">
+        <ul>
+          <li>India – December 2014</li>
+        </ul>
+      </div>
     </div>
 
-    <img 
-      src="https://i.natgeofe.com/n/3ba76eee-c98f-4dae-85c2-ba30569082db/thundercloud-nationalgeographic_1773322.jpg" 
-      alt="India December 2014 thunderstorm" 
-    />
+    <!-- Middle image -->
+    <div class="column">
+      <img src="https://i.natgeofe.com/n/3ba76eee-c98f-4dae-85c2-ba30569082db/thundercloud-nationalgeographic_1773322.jpg" 
+           alt="India December 2014 thunderstorm">
+    </div>
 
-    <div class="list-container">
-      <ul>
-        <li>This thunderstorm produced around 1.3 billion volts!<br>That's almost enough energy to power New York City for 2 minutes!</li>
-      </ul>
+    <!-- Right text -->
+    <div class="column">
+      <div class="list-container">
+        <ul>
+          <li>This thunderstorm produced around 1.3 billion volts!<br>That's almost enough energy to power New York City for 2 minutes!</li>
+        </ul>
+      </div>
     </div>
   </div>
 
   <div class="button-container">
     <a href="/thunderstorm-slideshow/slide-3.html" class="next-button">Next slide →</a>
   </div>
+
 </body>
 </html>
